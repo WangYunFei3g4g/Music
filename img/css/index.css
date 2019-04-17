@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+header {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background: #535353;
+    opacity: 0.7;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+body {
+    background: url("../img/IMG_20160915_120332.jpg") 0px 0px;
+    background-size: cover;
+}
+
+.box {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+section .search {
+    width: 300px;
+    height: 30px;
+    display: block;
+    border-radius: 16px;
+    border: 1px solid #8e8e8e;
+    outline: none;
+    text-indent: 20px;
+    margin: 50px auto;
+    background: #8e8e8e;
+    color: #161313;
+    opacity: 0.6;
+}
+
+section ul {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #636363;
+    background: #f5f5f5;
+    opacity: 0.6;
+    border-radius: 10px;
+    display: none;
+}
+
+section ul li {
+    padding: 5px 10px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px dashed #ccc;
+    color: black;
+    cursor: pointer;
+    font-size: 13px;
+    opacity: 1;
+}
+
+section ul li:hover {
+    color: blue;
+}
+
+footer {
+    width: 100%;
+    height: 46px;
+    background: url("../img/playbar.png");
+    position: fixed;
+    bottom: -40px;
+    /*bottom: 0px;*/
+    left: 0px;
+    transition: all 1s;
+}
+
+footer:hover {
+    bottom: 0px;
+}
+
+footer .bars .logo {
+    width: 40px;
+    height: 40px;
+}
+
+
+footer .btns {
+    height: 46px;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+}
+
+footer .btns .prev {
+    width: 28px;
+    height: 28px;
+    background: url("../img/playbar.png") 0px -123px;
+}
+
+footer .btns .prev:hover {
+    background-position-x: -30px;
+}
+
+footer .btns .start {
+    width: 36px;
+    height: 36px;
+    margin: 0 10px;
+    background: url("../img/playbar.png") 0px -198px;
+}
+
+footer .btns .start:hover {
+    background-position-x: -40px;
+}
+
+footer .btns .next {
+    width: 28px;
+    height: 28px;
+    background: url("../img/playbar.png") -80px -123px;
+}
+
+footer .btns .next:hover {
+    background-position-x: -110px;
+}
+
+footer .bars .logo {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+
+footer .bars .logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+footer .ctrl-bars-box {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 10px;
+}
+
+footer .ctrl-bars-box .ctrl-bars {
+    width: 600px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #535353;
+    position: relative;
+    top: 7px;
+}
+
+footer .ctrl-bars-box p span {
+    margin: 0px 5px;
+}
+
+footer .ctrl-bars-box .ctrl-bars .nowBars {
+    width: 0px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #C70C0C;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -8px;
+    background: #F3F3F3;
+    box-shadow: 0px 0px 3px 1px yellow;
+}
+
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn .ctrl-btn-small {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #C70C0C;
+    margin: 5px;
+}
+
+footer .bars .times {
+    color: #fff;
+    font-size: 12px;
+    margin: 21px 10px;
+}
+
+footer .modes {
+    height: 46px;
+    display: flex;
+    align-items: center;
+}
+
+footer .modes .voice {
+    width: 25px;
+    height: 25px;
+    background: url("../img/playbar.png") 0px -240px;
+}
+
+footer .modes .voice:hover {
+    background-position-x: -29px;
+}
+
+footer .modes .mode {
+    width: 25px;
+    height: 25px;
+    margin: 0px 20px;
+    background: url("../img/playbar.png") 0px -336px;
+}
+
+footer .modes .mode:hover {
+    background-position-x: -30px;
+}
+
+footer .modes .play-list {
+    width: 59px;
+    height: 28px;
+    background: url("../img/playbar.png") -41px -60px;
+    color: #fff;
+    text-indent: 36px;
+    line-height: 31px;
+    font-size: 10px;
+}
+
+footer .modes .play-list:hover {
+    background-position-y: -90px;
+}
+
+footer .play-list-box {
+    width: 50%;
+    height: 200px;
+    background: #fff;
+    position: absolute;
+    bottom: -200px;
+    /*bottom: 46px;*/
+    left: 25%;
+    border-radius: 6px;
+    color: #DDDDDD;
+}
+
+footer .play-list-box .list-header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: 900;
+    text-indent: 20px;
+    background: url("../img/playbar.png") 0px 0px;
+}
+
+footer .play-list-box ul {
+    overflow: scroll;
+    height: 160px;
+    background-color: #211E1D;
+}
+
+footer .play-list-box ul li {
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    text-indent: 20px;
+    cursor: pointer;
+    color: #afafaf;
+}
+
+footer .play-list-box ul li span:nth-of-type(1) {
+    float: left;
+}
+
+footer .play-list-box ul li span:nth-of-type(2) {
+    float: right;
+    margin-right: 20px;
+
+}
+
+
+footer .play-list-box ul li:hover {
+    background: #161313;
+    color: #fff;
+}
+
+
+footer .play-list-box ul li.active {
+    background: lightgreen;
+    color: black;
+}
+
+.info {
+    width: 80px;
+    height: 30px;
+    background: #676565;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    right: 360px;
+    bottom: 46px;
+    opacity: 0.8;
+    display: none;
+    z-index: 999;
+}
+
+i {
+    display: block;
+    float: right;
+    text-align: center;
+    margin-right: 15px;
+}
+
+#ran {
+    transform: rotateZ(-90deg);
+    position: absolute;
+    right: 370px;
+    bottom: 100px;
+    display: none;
+}
+
