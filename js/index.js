@@ -79,7 +79,7 @@
         if (e.keyCode == 13) {
             //服务器地址
             $.ajax({
-                url: 'https://api.imjad.cn/cloudmusic/',
+                url: 'https://api.bzqll.com/music/tencent/',
                 //参数
                 data: {
                     type: 'search',
